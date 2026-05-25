@@ -107,7 +107,7 @@ const App = () => {
 
 
   return (
-    <div className='parent'>
+    <div className='min-h-screen w-full bg-slate-100 p-8 flex gap-8 flex-wrap font-sans'>
       {jobOpenings.map(function (elem, idx) {
         return <div key={idx}>
           <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} />
